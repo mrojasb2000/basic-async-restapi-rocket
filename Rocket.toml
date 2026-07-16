@@ -1,0 +1,18 @@
+[default]
+port = 3000
+temp_dir = "/tmp"
+## Please generate your own with `openssl rand -base64 32`
+secret_key = "C5KY7rKI+d4HbXA+NjppXOyLMDlZz8759yOWVsh3ApE="
+log_level = "normal"
+keep_alive = 5
+
+[default.shutdown]
+ctrlc = true
+signals = ["term"]
+grace = 5
+mercy = 5
+force = true
+
+
+[release]
+port = 8080
